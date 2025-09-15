@@ -1,0 +1,19 @@
+h1{
+    color: blue;
+}
+h1{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#one{
+    color: red;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px;
+}
+#two{
+    color: yellow;
+}
+#three{
+    color: blue;
+}
