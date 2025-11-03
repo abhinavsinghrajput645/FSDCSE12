@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: relative;
+  animation: moveSquare 6s infinite linear;
+}
+
+@keyframes moveSquare {
+  0%   { background-color: red;   top: 0;   left: 0; }
+  25%  { background-color: blue;  top: 0;   left: 400px; }
+  50%  { background-color: green; top: 400px; left: 400px; }
+  75%  { background-color: yellow; top: 400px; left: 0; }
+  100% { background-color: red;   top: 0;   left: 0; }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
