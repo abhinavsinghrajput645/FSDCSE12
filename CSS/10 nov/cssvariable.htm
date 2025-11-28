@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variables Example</title>
+  <style>
+    :root {
+      --main-bg: #1e1e1e;
+      --main-text: #ffffff;
+      --accent-color: #ff9800;
+    }
+
+    body {
+      background: var(--main-bg);
+      color: var(--main-text);
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      background: var(--accent-color);
+      color: var(--main-text);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffa726;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello CSS Variables!</h1>
+  <button>Click Me</button>
+</body>
+</html>

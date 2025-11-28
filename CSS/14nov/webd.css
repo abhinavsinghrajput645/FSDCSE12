@@ -1,0 +1,88 @@
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    background: #f2f2f2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Base styling for all boxes */
+.box {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+/* Unique Colors */
+#box1 { background: #ff4757; }
+#box2 { background: #1e90ff; }
+#box3 { background: #2ed573; }
+#box4 { background: #ffa502; }
+#box5 { background: #a55eea; }
+#box6 { background: #ff9f43; }
+#box7 { background: #00cec9; }
+#box8 { background: #e84393; }
+#box9 { background: #6ab04c; }
+#box10 { background: #30336b; }
+
+/* 🔥 Each box demonstrates a different flex property */
+
+/* 1️⃣ flex-grow */
+#box1 {
+    flex-grow: 1;   /* grows more than other items */
+}
+
+/* 2️⃣ flex-shrink */
+#box2 {
+    flex-shrink: 0; /* will not shrink when screen is small */
+}
+
+/* 3️⃣ flex-basis */
+#box3 {
+    flex-basis: 200px; /* starts with 200px width */
+}
+
+/* 4️⃣ order: move box */
+#box4 {
+    order: -1; /* comes first visually */
+}
+
+/* 5️⃣ align-self: center */
+#box5 {
+    align-self: center;
+}
+
+/* 6️⃣ align-self: flex-end */
+#box6 {
+    align-self: flex-end;
+}
+
+/* 7️⃣ flex: grow shrink basis */
+#box7 {
+    flex: 2 1 150px;
+}
+
+/* 8️⃣ flex: no shrink + fixed basis */
+#box8 {
+    flex: 0 0 180px;
+}
+
+/* 9️⃣ order: send to last */
+#box9 {
+    order: 5;
+}
+
+/* 🔟 Auto margins (center this box) */
+#box10 {
+    margin-left: auto;
+    margin-right: auto;
+}
